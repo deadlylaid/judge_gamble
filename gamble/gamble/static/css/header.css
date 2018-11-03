@@ -1,0 +1,7 @@
+header {
+    background-color: #009688!important;
+}
+
+.bs-docs-nav .navbar-brand, .bs-docs-nav .navbar-nav>li>a {
+    color : white;
+}

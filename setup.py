@@ -9,6 +9,7 @@ install_requires = [
     'pip>=18',
     'django>=2.0',
     'pytest',
+    'django-extensions',
 ]
 
 setup(
