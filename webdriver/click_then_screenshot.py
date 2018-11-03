@@ -54,4 +54,15 @@ driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/main.png
 #(1366, 768)
 #pyautogui.click(x=719, y=465, clicks=1, interval=1, button='left')
 
+deposit=driver.find_element_by_xpath('//*[@id="header"]/div[2]/div[1]/ul/li[1]/a')
+deposit.click()
+driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/deposit.png')
+
+wihdrawal=driver.find_element_by_xpath('//*[@id="header"]/div[2]/div[1]/ul/li[2]/a')
+wihdrawal.click()
+driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/withdrawal.png')
+
+bet=driver.find_element_by_xpath('//*[@id="header"]/div[1]/div/ul/li[1]/a')
+bet.click()
+driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/bet.png')
 
