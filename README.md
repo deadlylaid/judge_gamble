@@ -1,2 +1,7 @@
 # judge_gamble
-judge gambling
+
+
+```
+source venv/bin/activate
+pip install -e .
+```
