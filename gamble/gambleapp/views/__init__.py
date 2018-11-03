@@ -1,2 +1,2 @@
 from .home import HomeView
-from .auth import LoginView, LogoutView
+from .auth import LoginView, LogoutView, JoinUs

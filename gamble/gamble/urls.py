@@ -21,7 +21,7 @@ from gambleapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name='home'),
+    path('joinus/', JoinUs.as_view(), name='joinus'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-
 ]
