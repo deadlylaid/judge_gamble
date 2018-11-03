@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+}
+
 .btn-info {
-    background-color : #009688!important;
+    background-color: #009688 !important;
 }
