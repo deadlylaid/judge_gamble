@@ -15,5 +15,3 @@
 source venv/bin/activate
 pip install -e .
 ```
->>>>>>> master
->>>>>>> Stashed changes
