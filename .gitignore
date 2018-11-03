@@ -1,3 +1,4 @@
 .idea/*
+__pycache__/*
 judge_gamble.egg-info/*
 venv/*

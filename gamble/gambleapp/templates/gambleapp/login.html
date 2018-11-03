@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+
+<div class="col-md-4 mb-md-0 mb-3">
+</div>
+
+  <!-- Default form login -->
+<form class="text-center border border-light p-5" method="POST">
+    {% csrf_token %}
+    <p class="h4 mb-4">로그인</p>
+
+    <input type="text" name="username" class="form-control mb-4" placeholder="아이디">
+    <input type="password" name="password" class="form-control mb-4" placeholder="비밀번호">
+    <br>
+    <br>
+    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+    <p>Not a member?
+        <a href="">Register</a>
+    </p>
+
+</form>
+
+<div class="col-md-4 mb-md-0 mb-3">
+</div>
+{% endblock %}

@@ -10,6 +10,7 @@ install_requires = [
     'django>=2.0',
     'pytest',
     'django-extensions',
+    'ipython',
 ]
 
 setup(
