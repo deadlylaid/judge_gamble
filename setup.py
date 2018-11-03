@@ -6,6 +6,7 @@ setup_requires = [
 ]
 
 install_requires = [
+    'ipython',
     'pip>=18',
     'django>=2.0',
     'pytest',

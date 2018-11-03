@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+
+<div class="col-md-4 mb-md-0 mb-3">
+</div>
+
+  <!-- Default form login -->
+<form class="text-center border border-light p-5" method="POST">
+    {% csrf_token %}
+    <p class="h4 mb-4">회원가입</p>
+
+    <input type="text" name="username" class="form-control mb-4" placeholder="아이디">
+    <input type="password" name="password" class="form-control mb-4" placeholder="비밀번호">
+    <input type="password" name="password2" class="form-control mb-4" placeholder="비밀번호 재입력">
+    <input type="text" name="name" class="form-control mb-4" placeholder="성함">
+    <input type="text" name="phonenumber" class="form-control mb-4" placeholder="휴대전화 번 ('-'을 빼고 입력해주시기 바랍니다)">
+    <br>
+    <br>
+    <button class="btn btn-info btn-block my-4" type="submit">회원가입하기</button>
+
+    <p>Not a member?
+        <a href="">Register</a>
+    </p>
+
+</form>
+
+<div class="col-md-4 mb-md-0 mb-3">
+</div>
+{% endblock %}

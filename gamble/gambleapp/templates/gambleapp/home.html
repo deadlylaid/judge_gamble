@@ -6,11 +6,40 @@
 {% endblock %}
 
 {% block content %}
+<br>
+<br>
+<br>
 <div class="col-lg-offset-5">
     <br>
 </div>
 <div class="col-lg-offset-5">
-    <h1>불법도박 근절을 위해 노력해주세요!</h1>
+        <img src="{% static 'img/kids.png' %}" alt="">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <br>
+                <div class="md-form">
+                  <input type="text" name="url" class="form-control">
+                  <label for="form1">도박사이트 URL</label>
+                </div>
+                <div class="md-form">
+                  <input type="text" name="site_id" class="form-control">
+                  <label for="form1">도박사이트 ID</label>
+                </div>
+                <div class="md-form">
+                  <input type="password" name="password" class="form-control validate">
+                  <label for="form1">도박사이트 암호</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-md">신고하기</button>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
 </div>
+<br>
+<br>
+<br>
 
 {% endblock %}
