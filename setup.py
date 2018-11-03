@@ -12,6 +12,8 @@ install_requires = [
     'pytest',
     'django-extensions',
     'ipython',
+    'opencv-python',
+    'pytesseract',
 ]
 
 setup(
