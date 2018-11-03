@@ -11,8 +11,10 @@ This is a temporary script file.
 4.해당 좌표 클릭
 """
 from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
 import pyautogui
+import extract_text2
+
+
 
 #def find_id():
 #    num=0
@@ -33,16 +35,23 @@ driver = webdriver.Chrome(executable_path=r'C:/Users/jayta/Documents/repo/packag
 driver.set_page_load_timeout(30)
 
 driver.implicitly_wait(1)
-url='http://htht-3.com/main.asp?abc'
+url='http://kbest-345.com/Login/Login.aspx'
 driver.get(url)
 driver.maximize_window()
-driver.find_element_by_xpath('//*[@id="userid"]').send_keys('ID')
-driver.find_element_by_xpath('//*[@id="passwd"]').send_keys('비밀번호'+u'\ue007')
+driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/login.png')
+test_instance = extract_text2.ExtractText('C:/Users/jayta/Documents/repo/screenshot/login.png')
+password = test_instance.preprocess_image()
+#sc코드 삽입
+driver.find_element_by_xpath('//*[@id="UserID"]').send_keys('ajtwoddl12')
+driver.find_element_by_xpath('//*[@id="UserPass"]').send_keys('ajtwoddl12')
+driver.find_element_by_xpath('//*[@id="captchaKey"]').send_keys(password+u'\ue007')
+driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/main.png')
 
-driver.get_screenshot_as_file('C:/Users/jayta/Documents/repo/screenshot/1.png')
+#좌표값 찾기
 
-pyautogui.size()
-(1366, 768)
-pyautogui.click(x=719, y=465, clicks=1, interval=1, button='left')
+
+#pyautogui.size()
+#(1366, 768)
+#pyautogui.click(x=719, y=465, clicks=1, interval=1, button='left')
 
 
