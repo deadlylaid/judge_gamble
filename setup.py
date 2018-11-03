@@ -7,7 +7,7 @@ setup_requires = [
 
 install_requires = [
     'pip>=18',
-    'flask',
+    'django>=2.0',
     'pytest',
 ]
 
