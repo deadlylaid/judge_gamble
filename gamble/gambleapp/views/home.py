@@ -26,3 +26,5 @@ class HomeView(CreateView):
 
     def form_invalid(self, form):
         return redirect(reverse('home'))
+
+
